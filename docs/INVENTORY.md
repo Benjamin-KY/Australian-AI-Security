@@ -5,11 +5,11 @@
 This inventory catalogues all known Australian AI Security standards, policies, frameworks, and guidance documents. Each entry includes status (mandatory/voluntary), scope, and direct links where available.
 
 **Legend:**
-- ðŸ”´ **Mandatory** - Legal or policy requirement
-- ðŸŸ¡ **Sector-Specific** - Binding for specific industries
-- ðŸŸ¢ **Voluntary** - Guidance/best practice
-- ðŸ“… **Date** - Latest version or release date
-- ðŸ”— **Link** - Direct URL to document
+- **Mandatory** - Legal or policy requirement
+- **Sector-Specific** - Binding for specific industries
+- **Voluntary** - Guidance/best practice
+- **Date** - Latest version or release date
+- **Link** - Direct URL to document
 
 ---
 
@@ -87,9 +87,9 @@ Mandatory protective security requirements for Commonwealth entities.
 
 | Document | Date | Status | Scope | Key AI Provisions |
 |----------|------|--------|-------|-------------------|
-| **[PSPF Release 2025](https://www.protectivesecurity.gov.au/)** | Jul 2025 | ðŸ”´ Mandatory | Non-corporate Commonwealth entities | New AI, quantum, and connected peripherals content |
-| **[PSPF Policy Advisory 001-2025](https://www.protectivesecurity.gov.au/policies/pspf-policy-advisory-001-2025)** | Oct 2025 | ðŸ”´ Mandatory | All Commonwealth entities | Rules for OFFICIAL information with generative AI; approved providers (OpenAI, Anthropic) |
-| **[PSPF Direction 001-2025 (DeepSeek Ban)](https://www.protectivesecurity.gov.au/news/pspf-direction-update-deepseek-products-applications-and-web-services)** | Feb 2025 | ðŸ”´ Mandatory | All Commonwealth entities | Prohibition on DeepSeek products, applications, web services |
+| **[PSPF Release 2025](https://www.protectivesecurity.gov.au/)** | Jul 2025 | Mandatory | Non-corporate Commonwealth entities | New AI, quantum, and connected peripherals content |
+| **[PSPF Policy Advisory 001-2025](https://www.protectivesecurity.gov.au/policies/pspf-policy-advisory-001-2025)** | Oct 2025 | Mandatory | All Commonwealth entities | Rules for OFFICIAL information with generative AI; approved providers (OpenAI, Anthropic) |
+| **[PSPF Direction 001-2025 (DeepSeek Ban)](https://www.protectivesecurity.gov.au/news/pspf-direction-update-deepseek-products-applications-and-web-services)** | Feb 2025 | Mandatory | All Commonwealth entities | Prohibition on DeepSeek products, applications, web services |
 
 ### PSPF Supporting Materials
 
@@ -106,10 +106,10 @@ Requirements for critical infrastructure sectors under the Security of Critical 
 
 | Document | Date | Status | Scope | AI Relevance |
 |----------|------|--------|-------|--------------|
-| **[Security of Critical Infrastructure Act 2018](https://www.legislation.gov.au/Details/C2024C00267)** | Nov 2024 (amended) | ðŸ”´ Mandatory | 22 critical infrastructure asset classes | AI systems in CI must be covered under CIRMP |
-| **[CIRMP Rules](https://www.cisc.gov.au/legislative-information-and-reforms/critical-infrastructure/critical-infrastructure-risk-management-program)** | Aug 2024 | ðŸ”´ Mandatory | Responsible entities | Cyber hazard vector covers AI systems |
-| **[CISC AI Factsheet](https://www.cisc.gov.au/resources-subsite/Documents/artificial-intelligence-factsheet.pdf)** | Jun 2025 | ðŸŸ¢ Guidance | Critical infrastructure owners | Three AI risk categories: attacks using AI, attacks on AI, AI reliability failures |
-| **[Cyber Incident Reporting Requirements](https://www.cisc.gov.au/legislative-information-and-reforms/critical-infrastructure/reporting-obligations)** | Jul 2024 | ðŸ”´ Mandatory | CI asset owners | 12-hour reporting for significant AI-related incidents |
+| **[Security of Critical Infrastructure Act 2018](https://www.legislation.gov.au/Details/C2024C00267)** | Nov 2024 (amended) | Mandatory | 22 critical infrastructure asset classes | AI systems in CI must be covered under CIRMP |
+| **[CIRMP Rules](https://www.cisc.gov.au/legislative-information-and-reforms/critical-infrastructure/critical-infrastructure-risk-management-program)** | Aug 2024 | Mandatory | Responsible entities | Cyber hazard vector covers AI systems |
+| **[CISC AI Factsheet](https://www.cisc.gov.au/resources-subsite/Documents/artificial-intelligence-factsheet.pdf)** | Jun 2025 | Guidance | Critical infrastructure owners | Three AI risk categories: attacks using AI, attacks on AI, AI reliability failures |
+| **[Cyber Incident Reporting Requirements](https://www.cisc.gov.au/legislative-information-and-reforms/critical-infrastructure/reporting-obligations)** | Jul 2024 | Mandatory | CI asset owners | 12-hour reporting for significant AI-related incidents |
 
 ---
 
@@ -119,11 +119,11 @@ AI governance for the Australian Public Service.
 
 | Document | Date | Status | Scope | Key Requirements |
 |----------|------|--------|-------|------------------|
-| **[Policy for the Responsible Use of AI in Government v2.0](https://www.digital.gov.au/policy/ai/policy)** | Dec 2025 | ðŸ”´ Mandatory | Non-corporate Commonwealth entities | Chief AI Officers, transparency statements, high-risk oversight |
-| **[AI Plan for the Australian Public Service](https://www.digital.gov.au/policy/ai/plan)** | Nov 2025 | ðŸ”´ Policy | APS | Every agency to have AI training, Chief AI Officers, usage tracking |
-| **[AI Technical Standard](https://www.digital.gov.au/policy/ai/technical-standard)** | Jul 2025 | ðŸ”´ Mandatory | Commonwealth agencies | Technical implementation requirements |
-| **[Public Generative AI Tools Guidance](https://www.dta.gov.au/guidance-use-public-generative-ai-tools)** | Jun 2024 | ðŸŸ¢ Guidance | APS staff | Do's and don'ts for public GenAI |
-| **[GovAI Platform Requirements](https://www.digital.gov.au/policy/ai/govai)** | 2025 | ðŸ”´ Mandatory | Agencies using GovAI | Sovereign hosting, security controls |
+| **[Policy for the Responsible Use of AI in Government v2.0](https://www.digital.gov.au/policy/ai/policy)** | Dec 2025 | Mandatory | Non-corporate Commonwealth entities | Chief AI Officers, transparency statements, high-risk oversight |
+| **[AI Plan for the Australian Public Service](https://www.digital.gov.au/policy/ai/plan)** | Nov 2025 | Policy | APS | Every agency to have AI training, Chief AI Officers, usage tracking |
+| **[AI Technical Standard](https://www.digital.gov.au/policy/ai/technical-standard)** | Jul 2025 | Mandatory | Commonwealth agencies | Technical implementation requirements |
+| **[Public Generative AI Tools Guidance](https://www.dta.gov.au/guidance-use-public-generative-ai-tools)** | Jun 2024 | Guidance | APS staff | Do's and don'ts for public GenAI |
+| **[GovAI Platform Requirements](https://www.digital.gov.au/policy/ai/govai)** | 2025 | Mandatory | Agencies using GovAI | Sovereign hosting, security controls |
 
 ---
 
@@ -134,10 +134,10 @@ National AI policy and adoption guidance.
 | Document | Date | Status | Scope | Key Content |
 |----------|------|--------|-------|-------------|
 | **[National AI Plan](https://www.industry.gov.au/publications/national-ai-plan)** | Dec 2025 | Policy | National | 9 actions; AISI establishment; no dedicated AI Security provisions |
-| **[Guidance for AI Adoption (AI6)](https://www.industry.gov.au/publications/guidance-ai-adoption)** | Oct 2025 | ðŸŸ¢ Voluntary | All sectors | 6 essential practices for responsible adoption |
-| **[Being Clear About AI-Generated Content](https://www.industry.gov.au/publications/being-clear-about-ai-generated-content)** | Oct 2025 | ðŸŸ¢ Voluntary | All sectors | Labelling, watermarking, metadata recording |
-| **[Voluntary AI Safety Standard (VAISS)](https://www.industry.gov.au/publications/voluntary-ai-safety-standard)** | Sep 2024 | ðŸŸ¢ Voluntary (superseded) | All sectors | 10 guardrails; replaced by AI6 |
-| **[Australia's AI Ethics Principles](https://www.industry.gov.au/publications/australias-ai-ethics-principles)** | Oct 2024 (updated) | ðŸŸ¢ Voluntary | All sectors | 8 principles including privacy, security |
+| **[Guidance for AI Adoption (AI6)](https://www.industry.gov.au/publications/guidance-ai-adoption)** | Oct 2025 | Voluntary | All sectors | 6 essential practices for responsible adoption |
+| **[Being Clear About AI-Generated Content](https://www.industry.gov.au/publications/being-clear-about-ai-generated-content)** | Oct 2025 | Voluntary | All sectors | Labelling, watermarking, metadata recording |
+| **[Voluntary AI Safety Standard (VAISS)](https://www.industry.gov.au/publications/voluntary-ai-safety-standard)** | Sep 2024 | Voluntary (superseded) | All sectors | 10 guardrails; replaced by AI6 |
+| **[Australia's AI Ethics Principles](https://www.industry.gov.au/publications/australias-ai-ethics-principles)** | Oct 2024 (updated) | Voluntary | All sectors | 8 principles including privacy, security |
 
 ---
 
@@ -149,30 +149,30 @@ Binding requirements for specific regulated industries.
 
 | Document | Date | Status | Scope | AI Provisions |
 |----------|------|--------|-------|---------------|
-| **[CPS 234 Information Security](https://www.apra.gov.au/information-security)** | Jul 2019 | ðŸŸ¡ Mandatory | APRA-regulated entities | All infosec requirements apply to AI systems |
-| **[CPS 230 Operational Risk Management](https://www.apra.gov.au/operational-risk-management)** | Jul 2025 | ðŸŸ¡ Mandatory | APRA-regulated entities | New technology (including AI) risk assessment |
-| **[ASIC Report 798: Beware of the Gap](https://asic.gov.au/regulatory-resources/find-a-document/reports/rep-798/)** | Oct 2024 | ðŸŸ¡ Guidance | Financial services | AI governance, third-party risk, human oversight |
-| **[SPS 220 Risk Management](https://www.apra.gov.au/risk-management)** | Various | ðŸŸ¡ Mandatory | Superannuation | Applies to AI in investment decisions |
+| **[CPS 234 Information Security](https://www.apra.gov.au/information-security)** | Jul 2019 | Mandatory | APRA-regulated entities | All infosec requirements apply to AI systems |
+| **[CPS 230 Operational Risk Management](https://www.apra.gov.au/operational-risk-management)** | Jul 2025 | Mandatory | APRA-regulated entities | New technology (including AI) risk assessment |
+| **[ASIC Report 798: Beware of the Gap](https://asic.gov.au/regulatory-resources/find-a-document/reports/rep-798/)** | Oct 2024 | Guidance | Financial services | AI governance, third-party risk, human oversight |
+| **[SPS 220 Risk Management](https://www.apra.gov.au/risk-management)** | Various | Mandatory | Superannuation | Applies to AI in investment decisions |
 
 ### Online Safety (eSafety)
 
 | Document | Date | Status | Scope | AI Provisions |
 |----------|------|--------|-------|---------------|
-| **[eSafety Industry Standards](https://www.esafety.gov.au/industry/codes-and-standards)** | Jun 2024 | ðŸŸ¡ Mandatory | Online service providers | GenAI services, AI companion chatbots, model distribution platforms |
-| **[eSafety Generative AI Position Statement](https://www.esafety.gov.au/industry/generative-ai)** | 2024 | ðŸŸ¢ Guidance | GenAI providers | Safety by design expectations |
+| **[eSafety Industry Standards](https://www.esafety.gov.au/industry/codes-and-standards)** | Jun 2024 | Mandatory | Online service providers | GenAI services, AI companion chatbots, model distribution platforms |
+| **[eSafety Generative AI Position Statement](https://www.esafety.gov.au/industry/generative-ai)** | 2024 | Guidance | GenAI providers | Safety by design expectations |
 
 ### Privacy (OAIC)
 
 | Document | Date | Status | Scope | AI Provisions |
 |----------|------|--------|-------|---------------|
-| **[OAIC Guide to Data Analytics and AI](https://www.oaic.gov.au/privacy/guidance-and-advice/guide-to-data-analytics-and-ai)** | 2023 | ðŸŸ¢ Guidance | APP entities | Privacy obligations for AI |
-| **[APP Guidelines - AI Automated Decisions](https://www.oaic.gov.au/privacy/australian-privacy-principles-guidelines)** | Dec 2026 | ðŸŸ¡ Mandatory | APP entities | Disclosure requirements for automated decisions (APP 1.7-1.9) |
+| **[OAIC Guide to Data Analytics and AI](https://www.oaic.gov.au/privacy/guidance-and-advice/guide-to-data-analytics-and-ai)** | 2023 | Guidance | APP entities | Privacy obligations for AI |
+| **[APP Guidelines - AI Automated Decisions](https://www.oaic.gov.au/privacy/australian-privacy-principles-guidelines)**  | Mandatory | APP entities | Disclosure requirements for automated decisions (APP 1.7-1.9) |
 
 ### Healthcare (TGA)
 
 | Document | Date | Status | Scope | AI Provisions |
 |----------|------|--------|-------|---------------|
-| **[TGA Regulation of Software as Medical Device](https://www.tga.gov.au/resources/resource/guidance/regulation-software-based-medical-devices)** | 2021 | ðŸŸ¡ Mandatory | Medical AI | AI in medical devices, SaMD classification |
+| **[TGA Regulation of Software as Medical Device](https://www.tga.gov.au/resources/resource/guidance/regulation-software-based-medical-devices)** | 2021 | Mandatory | Medical AI | AI in medical devices, SaMD classification |
 | **[AI in Healthcare Legislation Review](https://www.health.gov.au/our-work/safe-and-responsible-ai-in-healthcare)** | Ongoing | Review | Healthcare sector | Review of AI regulation in healthcare |
 
 ---
@@ -181,102 +181,102 @@ Binding requirements for specific regulated industries.
 
 | Agency | Document | Date | Status | Scope |
 |--------|----------|------|--------|-------|
-| **Defence** | [Method for Ethical AI in Defence](https://www.dst.defence.gov.au/) | 2021 | ðŸ”´ Mandatory (Defence) | Defence AI | Verification, human control, IHL compliance |
+| **Defence** | [Method for Ethical AI in Defence](https://www.dst.defence.gov.au/) | 2021 | Mandatory (Defence) | Defence AI | Verification, human control, IHL compliance |
 | **Attorney-General's** | [Copyright and AI Reference Group](https://www.ag.gov.au/rights-and-protections/copyright/copyright-and-ai-reference-group) | Ongoing | Consultation | AI developers | Copyright implications of AI training |
 | **Finance** | [National Framework for AI Assurance](https://www.finance.gov.au/government/public-data/national-framework-assurance-artificial-intelligence-government) | Jun 2024 | Framework | All governments | 5 cornerstones for AI assurance |
-| **Education** | [Australian Framework for GenAI in Schools](https://www.education.gov.au/schooling/generative-ai-schools) | Dec 2023 | ðŸŸ¢ Guidance | Schools | Safe classroom use of GenAI |
+| **Education** | [Australian Framework for GenAI in Schools](https://www.education.gov.au/schooling/generative-ai-schools) | Dec 2023 | Guidance | Schools | Safe classroom use of GenAI |
 
 ---
 
 ## New South Wales
 
-**Maturity Level: â–ˆâ–ˆâ–ˆ Comprehensive**
+**Maturity Level: Comprehensive**
 
 NSW operates Australia's most mature mandatory government AI governance framework.
 
 | Document | Date | Status | Scope | Key Requirements |
 |----------|------|--------|-------|------------------|
-| **[NSW AI Assessment Framework (AIAF)](https://www.digital.nsw.gov.au/policy/artificial-intelligence/nsw-artificial-intelligence-assessment-framework)** | Mar 2022 | ðŸ”´ Mandatory | All NSW Government | Risk self-assessment, lifecycle governance, >$5M to DAF |
-| **[NSW AI Ethics Policy](https://www.digital.nsw.gov.au/policy/artificial-intelligence/nsw-ai-ethics-policy)** | 2022 | ðŸ”´ Mandatory | All NSW Government | 5 mandatory principles |
-| **[Circular DCS-2024-04](https://arp.nsw.gov.au/dcs-2024-04-use-of-artificial-intelligence-by-nsw-government-agencies/)** | 2024 | ðŸ”´ Mandatory | All NSW Government bodies | Compliance directive |
+| **[NSW AI Assessment Framework (AIAF)](https://www.digital.nsw.gov.au/policy/artificial-intelligence/nsw-artificial-intelligence-assessment-framework)** | Mar 2022 | Mandatory | All NSW Government | Risk self-assessment, lifecycle governance, >$5M to DAF |
+| **[NSW AI Ethics Policy](https://www.digital.nsw.gov.au/policy/artificial-intelligence/nsw-ai-ethics-policy)** | 2022 | Mandatory | All NSW Government | 5 mandatory principles |
+| **[Circular DCS-2024-04](https://arp.nsw.gov.au/dcs-2024-04-use-of-artificial-intelligence-by-nsw-government-agencies/)** | 2024 | Mandatory | All NSW Government bodies | Compliance directive |
 | **[NSW AI Strategy](https://www.digital.nsw.gov.au/policy/artificial-intelligence/nsw-ai-strategy)** | 2024 | Policy | NSW Government | Strategic direction |
-| **[Cyber Security NSW GenAI Guidance](https://www.cyber.nsw.gov.au/guidance/generative-ai)** | 2024 | ðŸŸ¢ Guidance | NSW agencies | Do's and don'ts for public GenAI |
+| **[Cyber Security NSW GenAI Guidance](https://www.cyber.nsw.gov.au/guidance/generative-ai)** | 2024 | Guidance | NSW agencies | Do's and don'ts for public GenAI |
 | **[NSW AI Review Committee Terms](https://www.digital.nsw.gov.au/policy/artificial-intelligence/ai-review-committee)** | 2022 | Governance | High/very-high risk projects | Expert review of significant AI |
 
 ---
 
 ## Victoria
 
-**Maturity Level: â–ˆâ–ˆâ–‘ Developing**
+**Maturity Level: Developing**
 
 Victoria formalised AI governance in November 2024 with mandatory guidelines.
 
 | Document | Date | Status | Scope | Key Requirements |
 |----------|------|--------|-------|------------------|
-| **[Administrative Guideline for Safe and Responsible Use of GenAI in VPS](https://www.vic.gov.au/administrative-guideline-safe-responsible-use-gen-ai-vps)** | Nov 2024 | ðŸ”´ Mandatory | Victorian Public Sector | Adopts 8 AI Ethics Principles |
+| **[Administrative Guideline for Safe and Responsible Use of GenAI in VPS](https://www.vic.gov.au/administrative-guideline-safe-responsible-use-gen-ai-vps)** | Nov 2024 | Mandatory | Victorian Public Sector | Adopts 8 AI Ethics Principles |
 | **[Victorian AI Assurance Framework](https://www.vic.gov.au/ai-assurance-framework)** | Piloting | In development | VPS | Under development, piloting with Copilot |
-| **[VPDSF v2.1](https://www.vic.gov.au/victorian-protective-data-security-framework)** | 2023 | ðŸ”´ Mandatory | Victorian agencies | 12 mandatory standards, 5 domains - applies to AI |
-| **[OVIC AI Privacy Guidance](https://ovic.vic.gov.au/privacy/resources-for-organisations/artificial-intelligence-understanding-privacy-obligations/)** | 2024 | ðŸŸ¢ Guidance | Victorian organisations | Privacy obligations for AI |
-| **[Victoria Police AI Ethics Framework](https://www.police.vic.gov.au/victoria-police-artificial-intelligence-ethics-framework)** | Mar 2024 | ðŸ”´ Mandatory (VicPol) | Victoria Police | 8 enabling principles including Human Rights |
+| **[VPDSF v2.1](https://www.vic.gov.au/victorian-protective-data-security-framework)** | 2023 | Mandatory | Victorian agencies | 12 mandatory standards, 5 domains - applies to AI |
+| **[OVIC AI Privacy Guidance](https://ovic.vic.gov.au/privacy/resources-for-organisations/artificial-intelligence-understanding-privacy-obligations/)** | 2024 | Guidance | Victorian organisations | Privacy obligations for AI |
+| **[Victoria Police AI Ethics Framework](https://www.police.vic.gov.au/victoria-police-artificial-intelligence-ethics-framework)** | Mar 2024 | Mandatory (VicPol) | Victoria Police | 8 enabling principles including Human Rights |
 
 ---
 
 ## Queensland
 
-**Maturity Level: â–ˆâ–ˆâ–‘ Developing**
+**Maturity Level: Developing**
 
 Queensland has comprehensive mandatory policy with sophisticated risk assessment.
 
 | Document | Date | Status | Scope | Key Requirements |
 |----------|------|--------|-------|------------------|
-| **[AI Governance Policy](https://www.forgov.qld.gov.au/information-and-communication-technology/queensland-government-enterprise-architecture/ai-governance)** | Sep 2024 | ðŸ”´ Mandatory | QLD Government | ISO 38507-based governance, ISMS integration |
-| **[FAIRA Framework](https://www.forgov.qld.gov.au/information-and-communication-technology/queensland-government-enterprise-architecture/faira-framework)** | 2024 | ðŸ”´ Mandatory | QLD Government | Two-part risk assessment (Components + Values) |
-| **[IS18 Information and Cyber Security Policy](https://www.qgcio.qld.gov.au/documents/information-security-policy-is18)** | 2024 | ðŸ”´ Mandatory | QLD Government | Mandatory ISMS, Essential Eight implementation |
+| **[AI Governance Policy](https://www.forgov.qld.gov.au/information-and-communication-technology/queensland-government-enterprise-architecture/ai-governance)** | Sep 2024 | Mandatory | QLD Government | ISO 38507-based governance, ISMS integration |
+| **[FAIRA Framework](https://www.forgov.qld.gov.au/information-and-communication-technology/queensland-government-enterprise-architecture/faira-framework)** | 2024 | Mandatory | QLD Government | Two-part risk assessment (Components + Values) |
+| **[IS18 Information and Cyber Security Policy](https://www.qgcio.qld.gov.au/documents/information-security-policy-is18)** | 2024 | Mandatory | QLD Government | Mandatory ISMS, Essential Eight implementation |
 | **[QChat GenAI Environment](https://www.forgov.qld.gov.au/qchat)** | 2024 | Platform | QLD Government | Secure government-approved GenAI |
-| **[OIC AI Privacy Guidance](https://www.oic.qld.gov.au/guidelines/for-government/artificial-intelligence)** | 2024 | ðŸŸ¢ Guidance | QLD agencies | Privacy and RTI obligations for AI |
+| **[OIC AI Privacy Guidance](https://www.oic.qld.gov.au/guidelines/for-government/artificial-intelligence)** | 2024 | Guidance | QLD agencies | Privacy and RTI obligations for AI |
 
 ---
 
 ## South Australia
 
-**Maturity Level: â–ˆâ–‘â–‘ Basic (developing)**
+**Maturity Level: Basic (developing)**
 
 SA established Australia's first state Office for AI in November 2025.
 
 | Document | Date | Status | Scope | Key Requirements |
 |----------|------|--------|-------|------------------|
 | **[Office for Artificial Intelligence](https://www.dpc.sa.gov.au/responsibilities/office-for-artificial-intelligence)** | Nov 2025 | Governance | SA Government | $28M budget, strategic coordination |
-| **[AI Ethics Policy (DTF/P9.1)](https://www.dpc.sa.gov.au/documents/ai-ethics-policy)** | 2024 | ðŸ”´ Mandatory | SA Government | Design, development, deployment, operation |
-| **[LLM Guideline (DPC/G13.1) v1.3](https://www.dpc.sa.gov.au/documents/llm-guideline)** | 2024 | ðŸŸ¢ Optional | SA Government | Practical LLM controls |
-| **[SACSF v2.0](https://www.security.sa.gov.au/cyber-security/sacsf)** | 2024 | ðŸ”´ Mandatory | SA Government | 18 policy statements, 4-tier implementation |
+| **[AI Ethics Policy (DTF/P9.1)](https://www.dpc.sa.gov.au/documents/ai-ethics-policy)** | 2024 | Mandatory | SA Government | Design, development, deployment, operation |
+| **[LLM Guideline (DPC/G13.1) v1.3](https://www.dpc.sa.gov.au/documents/llm-guideline)** | 2024 | Optional | SA Government | Practical LLM controls |
+| **[SACSF v2.0](https://www.security.sa.gov.au/cyber-security/sacsf)** | 2024 | Mandatory | SA Government | 18 policy statements, 4-tier implementation |
 
 ---
 
 ## Western Australia
 
-**Maturity Level: â–ˆâ–ˆâ–ˆ Comprehensive**
+**Maturity Level: Comprehensive**
 
 WA has the most comprehensive framework among smaller jurisdictions.
 
 | Document | Date | Status | Scope | Key Requirements |
 |----------|------|--------|-------|------------------|
-| **[WA Government AI Policy v2](https://www.wa.gov.au/government/publications/wa-government-artificial-intelligence-policy)** | Jul 2025 | ðŸ”´ Mandatory | WA Government | AI Accountable Officers by Sep 2025 |
-| **[WA AI Assurance Framework](https://www.wa.gov.au/government/publications/wa-ai-assurance-framework)** | 2024 | ðŸ”´ Mandatory | WA Government | Self-assessment, mid-range+ to Advisory Board |
+| **[WA Government AI Policy v2](https://www.wa.gov.au/government/publications/wa-government-artificial-intelligence-policy)** | Jul 2025 | Mandatory | WA Government | AI Accountable Officers by Sep 2025 |
+| **[WA AI Assurance Framework](https://www.wa.gov.au/government/publications/wa-ai-assurance-framework)** | 2024 | Mandatory | WA Government | Self-assessment, mid-range+ to Advisory Board |
 | **[WA AI Advisory Board](https://www.wa.gov.au/government/ai-advisory-board)** | Jan 2025 | Governance | High-risk projects | Independent expert review |
-| **[WA Cyber Security Advisory 20230509001](https://www.wa.gov.au/government/publications/cyber-security-advisory-ai-chatbots)** | May 2023 | ðŸŸ¢ Advisory | WA agencies | AI chatbot security risks |
-| **[WA Health AI Policy (MP 0193/25)](https://www.health.wa.gov.au/policies/mp-0193-25)** | 2025 | ðŸŸ¡ Mandatory (Health) | WA Health | Sector-specific AI requirements |
+| **[WA Cyber Security Advisory 20230509001](https://www.wa.gov.au/government/publications/cyber-security-advisory-ai-chatbots)** | May 2023 | Advisory | WA agencies | AI chatbot security risks |
+| **[WA Health AI Policy (MP 0193/25)](https://www.health.wa.gov.au/policies/mp-0193-25)** | 2025 | Mandatory (Health) | WA Health | Sector-specific AI requirements |
 
 ---
 
 ## Tasmania
 
-**Maturity Level: â–‘â–‘â–‘ Minimal**
+**Maturity Level: Minimal**
 
 Tasmania has the least developed AI governance, relying on guidance.
 
 | Document | Date | Status | Scope | Key Content |
 |----------|------|--------|-------|-------------|
-| **[Guidance for AI Use in Tasmanian Government v1.4](https://www.digital.tas.gov.au/guidance/artificial-intelligence)** | 2024 | ðŸŸ¢ Voluntary | TAS Government | 7 recommendations; references NSW AIAF |
+| **[Guidance for AI Use in Tasmanian Government v1.4](https://www.digital.tas.gov.au/guidance/artificial-intelligence)** | 2024 | Voluntary | TAS Government | 7 recommendations; references NSW AIAF |
 | **[Digital Strategy - AI Focus](https://www.digital.tas.gov.au/strategy)** | 2024 | Strategy | TAS Government | Strategic intent only |
 
 **Note:** Tasmania recommends using NSW AIAF for detailed guidance. Economic Diversification and Investment Strategy with AI focus expected H1 2026.
@@ -285,13 +285,13 @@ Tasmania has the least developed AI governance, relying on guidance.
 
 ## Northern Territory
 
-**Maturity Level: â–ˆâ–‘â–‘ Basic**
+**Maturity Level: Basic**
 
 NT has a mandatory framework with territory-specific principles.
 
 | Document | Date | Status | Scope | Key Requirements |
 |----------|------|--------|-------|------------------|
-| **[NT Government AI Assurance Framework](https://nt.gov.au/data-and-digital/ai-assurance-framework)** | May 2024 | ðŸ”´ Mandatory | NT Government | 5 NT-specific AI Ethics Principles |
+| **[NT Government AI Assurance Framework](https://nt.gov.au/data-and-digital/ai-assurance-framework)** | May 2024 | Mandatory | NT Government | 5 NT-specific AI Ethics Principles |
 | **[AI Advisory Board](https://nt.gov.au/data-and-digital/ai-advisory-board)** | 2024 | Governance | High-risk assessments | Reports to ICT Governance Board |
 
 **NT AI Ethics Principles:**
@@ -305,14 +305,14 @@ NT has a mandatory framework with territory-specific principles.
 
 ## Australian Capital Territory
 
-**Maturity Level: â–ˆâ–ˆâ–‘ Developing**
+**Maturity Level: Developing**
 
 ACT released comprehensive mandatory framework in May 2025.
 
 | Document | Date | Status | Scope | Key Requirements |
 |----------|------|--------|-------|------------------|
-| **[ACT Government AI Policy v1.0](https://www.act.gov.au/data-and-digital/ai-policy)** | May 2025 | ðŸ”´ Mandatory | ACT Government | 4 responsible officers per AI initiative |
-| **[ACT AI Assurance Framework](https://www.act.gov.au/data-and-digital/ai-assurance-framework)** | May 2025 | ðŸ”´ Mandatory | ACT Government | Aligned with National and NSW frameworks |
+| **[ACT Government AI Policy v1.0](https://www.act.gov.au/data-and-digital/ai-policy)** | May 2025 | Mandatory | ACT Government | 4 responsible officers per AI initiative |
+| **[ACT AI Assurance Framework](https://www.act.gov.au/data-and-digital/ai-assurance-framework)** | May 2025 | Mandatory | ACT Government | Aligned with National and NSW frameworks |
 | **[AI Advisory Group (AIAG)](https://www.act.gov.au/data-and-digital/aiag)** | 2025 | Governance | Medium/high risk | Reviews significant assessments |
 
 **ACT Required Officers:**
