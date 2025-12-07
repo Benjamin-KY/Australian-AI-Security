@@ -68,7 +68,7 @@ This index provides:
 - **No adversarial testing mandates** (EU requires for systemic risk models)
 - **No consolidated AI Security body** (UK renamed theirs to AI *Security* Institute)
 
-### The Safety â‰  Security Problem
+### The Safety vs Security Problem
 
 Australia's National AI Plan establishes an AI Safety Institute focused on alignment and frontier risks. It does not address:
 
