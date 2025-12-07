@@ -41,12 +41,12 @@ Primary technical guidance for AI security from Australia's cyber security autho
 
 | Document | Date | Status | Partners | Key Focus |
 |----------|------|--------|----------|-----------|
-| **[Engaging with Artificial Intelligence](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/engaging-with-artificial-intelligence)** | Jan 2024 | ðŸŸ¢ Voluntary | CISA, FBI, NSA, NCSC-UK, CCCS, NCSC-NZ, Japan NISC | Data poisoning, prompt injection, supply chain risks, model stealing |
-| **[Deploying AI Systems Securely](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/deploying-ai-systems-securely)** | Apr 2024 | ðŸŸ¢ Voluntary | NSA AISC (lead), Five Eyes | Secure deployment, access controls, network segmentation, AI red-teaming, GPU security |
-| **[Guidelines for Secure AI System Development](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/guidelines-secure-ai-system-development)** | Nov 2023 | ðŸŸ¢ Voluntary | NCSC-UK/CISA (lead), 23 agencies | Secure design lifecycle, SBOM, supply chain, threat modelling |
-| **[AI Data Security](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/ai-data-security)** | May 2025 | ðŸŸ¢ Voluntary | NSA AISC, Five Eyes | Data supply chain, poisoning, encryption, provenance tracking, content credentials |
-| **[AI/ML Supply Chain Risks and Mitigations](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/ai-ml-supply-chain)** | Oct 2025 | ðŸŸ¢ Voluntary | ASD's ACSC only | Pre-trained model risks, AI BOMs, vendor risk, defence-in-depth |
-| **[Content Credentials](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/content-credentials)** | Jan 2025 | ðŸŸ¢ Voluntary | NSA, CCCS, NCSC-UK | Deepfakes, media provenance, C2PA standard, cryptographic signing |
+| **[Engaging with Artificial Intelligence](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/engaging-with-artificial-intelligence)** | Jan 2024 | Voluntary | CISA, FBI, NSA, NCSC-UK, CCCS, NCSC-NZ, Japan NISC | Data poisoning, prompt injection, supply chain risks, model stealing |
+| **[Deploying AI Systems Securely](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/deploying-ai-systems-securely)** | Apr 2024 | Voluntary | NSA AISC (lead), Five Eyes | Secure deployment, access controls, network segmentation, AI red-teaming, GPU security |
+| **[Guidelines for Secure AI System Development](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/guidelines-secure-ai-system-development)** | Nov 2023 | Voluntary | NCSC-UK/CISA (lead), 23 agencies | Secure design lifecycle, SBOM, supply chain, threat modelling |
+| **[AI Data Security](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/ai-data-security)** | May 2025 | Voluntary | NSA AISC, Five Eyes | Data supply chain, poisoning, encryption, provenance tracking, content credentials |
+| **[AI/ML Supply Chain Risks and Mitigations](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/ai-ml-supply-chain)** | Oct 2025 | Voluntary | ASD's ACSC only | Pre-trained model risks, AI BOMs, vendor risk, defence-in-depth |
+| **[Content Credentials](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/content-credentials)** | Jan 2025 | Voluntary | NSA, CCCS, NCSC-UK | Deepfakes, media provenance, C2PA standard, cryptographic signing |
 
 ### ACSC Alerts and Advisories (AI-related)
 
@@ -64,9 +64,9 @@ Mandatory security controls for Australian Government entities. AI-specific cont
 
 | Control ID | Title | Date Added | Applicability | Requirement |
 |------------|-------|------------|---------------|-------------|
-| **ISM-1923** | OWASP Top 10 for LLM | Jun 2024 | ðŸ”´ Mandatory | Mitigate risks identified in OWASP Top 10 for Large Language Model Applications |
-| **ISM-1924** | Adversarial Input Detection | Jun 2024 | ðŸ”´ Mandatory | Detect and mitigate adversarial inputs including prompt injection attempts |
-| **ISM-2072** | AI Model Storage Formats | Sep 2025 | ðŸ”´ Mandatory | Store AI models in formats that do not allow arbitrary code execution (e.g., safetensors over pickle) |
+| **ISM-1923** | OWASP Top 10 for LLM | Jun 2024 | Mandatory | Mitigate risks identified in OWASP Top 10 for Large Language Model Applications |
+| **ISM-1924** | Adversarial Input Detection | Jun 2024 | Mandatory | Detect and mitigate adversarial inputs including prompt injection attempts |
+| **ISM-2072** | AI Model Storage Formats | Sep 2025 | Mandatory | Store AI models in formats that do not allow arbitrary code execution (e.g., safetensors over pickle) |
 
 **Source:** [Information Security Manual](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism)
 
