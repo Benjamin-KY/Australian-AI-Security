@@ -29,7 +29,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
-**Comprehensive audit and update (67 issues resolved):**
+**Comprehensive audit and update:**
 
 **Critical Corrections:**
 - OWASP Top 10 for LLM: Updated from v1.0 (2023) to v2.0 (2025) list
@@ -152,7 +152,7 @@ Track when key documents are updated:
 | VIC GenAI Guideline | Nov 2024 | 2026-04-17 | Current |
 | QLD AI Governance | Sep 2024 | 2026-04-17 | Current |
 | WA AI Policy | v2 Jul 2025 | 2026-04-17 | Current |
-| National AI Plan | Dec 2025 | 2026-04-17 | Just released |
+| National AI Plan | Dec 2025 | 2026-04-17 | Current |
 
 ---
 

@@ -48,7 +48,6 @@ This index provides:
 
 ---
 
-
 ## Key Findings
 
 ### What Australia Has
@@ -70,7 +69,7 @@ This index provides:
 
 ### The Safety vs Security Problem
 
-Australia's AI Safety Institute (AISI), operational since early 2026, focuses on alignment and frontier risks. It does not address:
+Australia's AI Safety Institute (AISI), operational since early 2026, focuses on alignment and frontier risks. The following areas are primarily handled by ACSC rather than AISI:
 
 - Adversarial machine learning
 - Model poisoning and data integrity
@@ -97,7 +96,7 @@ The [Federal Frameworks](docs/FEDERAL.md) section details ACSC guidance with pra
 The [Gap Analysis](docs/GAPS.md) and [International Comparison](docs/INTERNATIONAL.md) provide the evidence base for advocacy and submissions.
 
 ### For Researchers
-The [Knowledge Graph](docs/KNOWLEDGE-GRAPH.md) visualises relationships.
+The [Knowledge Graph](docs/KNOWLEDGE-GRAPH.md) visualises relationships between frameworks, with an entity-relationship model and sample Neo4j queries for graph database construction.
 
 ---
 

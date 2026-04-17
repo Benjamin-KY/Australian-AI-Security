@@ -237,7 +237,7 @@ Queensland has comprehensive mandatory policy with sophisticated risk assessment
 
 ## South Australia
 
-**Maturity Level: Basic (developing)**
+**Maturity Level: Developing**
 
 SA established Australia's first state Office for AI in July 2025.
 

@@ -102,7 +102,7 @@ graph TB
     classDef state fill:#95e1d3,stroke:#333,stroke-width:2px
     
     class ISM,PSPF,SOCI,DTA mandatory
-    class ACSC1,ACSC2,ACSC3,ACSC4,ACSC5,ACSC6,ACSC7,AI6,ETHICS voluntary
+    class ACSC1,ACSC2,ACSC3,ACSC4,ACSC5,ACSC6,ACSC7,AI6,ETHICS,NAIP,AISI voluntary
     class APRA,ASIC,ESAFE,OAIC,TGA sector
     class NSW,VIC,QLD,WA,SA,ACT,NT,TAS state
 ```

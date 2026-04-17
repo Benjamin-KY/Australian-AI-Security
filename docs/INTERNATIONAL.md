@@ -121,7 +121,7 @@ Published January 2025, provides 13 principles across 5 lifecycle phases:
 | AI Cyber Security Code | ❌ No | ✅ 13 principles, 5 phases |
 | Red-teaming capability | ❌ No | ✅ AISI conducts |
 | Training requirements | ❌ No | ✅ regular security training |
-| Frontier model evaluation | ⚠️ AISI planned | ✅ Active program |
+| Frontier model evaluation | ⚠️ AISI operational | ✅ Active program |
 
 ---
 
@@ -266,7 +266,7 @@ Mandatory for all federal government AI:
 **Security Requirements:**
 - Security assessments during development
 - Measures to secure data and model integrity
-- Prevention of tampering and unauthorized modifications
+- Prevention of tampering and unauthorised modifications
 - Regular testing and monitoring
 
 #### Algorithmic Impact Assessment Tool
@@ -394,10 +394,10 @@ Australia is a member of INASI, connecting with peer institutes:
 
 | Standard | Description | Australia Status |
 |----------|-------------|------------------|
-| ISO/IEC 42001:2023 — AI Management Systems | AI Management Systems | Referenced, not mandated |
-| ISO/IEC 23894:2023 — AI Risk Management | AI Risk Management | Referenced |
-| ISO/IEC 27001:2022 — Information Security Management | Information Security | ISM aligns |
-| ISO/IEC 27701:2019 — Privacy Information Management | Privacy Information Management | OAIC references |
+| ISO/IEC 42001:2023 | AI Management Systems | Referenced, not mandated |
+| ISO/IEC 23894:2023 | AI Risk Management | Referenced |
+| ISO/IEC 27001:2022 | Information Security Management | ISM aligns |
+| ISO/IEC 27701:2019 | Privacy Information Management | OAIC references |
 
 ### Emerging and Recently Published Standards
 
