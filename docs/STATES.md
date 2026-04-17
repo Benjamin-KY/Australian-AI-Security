@@ -10,12 +10,12 @@ Australian states and territories have developed their own AI governance framewo
 
 | Jurisdiction | Maturity        | Mandatory Framework       | AI Advisory Body      | Key Strength                                         |
 |--------------|-----------------|--------------------------|----------------------|------------------------------------------------------|
-| **NSW**      | Comprehensive   | Yes (AIAF)               | AI Review Committee  | First mandatory government AI framework globally     |
+| **NSW**      | Comprehensive   | Yes (AIAF)               | AI Review Committee  | One of the first mandatory government AI frameworks  |
 | **WA**       | Comprehensive   | Yes (AI Policy v2)       | AI Advisory Board    | Comprehensive accountability structure               |
 | **VIC**      | Developing      | Yes (GenAI Guideline)    | In development       | Strong data security foundation (VPDSF)              |
 | **QLD**      | Developing      | Yes (AI Governance)      | Via QGCIO            | Sophisticated risk assessment (FAIRA)                |
 | **ACT**      | Developing      | Yes (AI Policy)          | AI Advisory Group    | Clear role definitions                               |
-| **SA**       | Basic           | Partial                  | Office for AI        | First state AI Office                                |
+| **SA**       | Developing      | Partial                  | Office for AI        | First state AI Office                                |
 | **NT**       | Basic           | Yes (Assurance Framework)| AI Advisory Board    | Territory-specific principles                        |
 | **TAS**      | Minimal         | No                       | None                 | Relies on NSW guidance                               |
 
@@ -29,7 +29,7 @@ NSW operates Australia's most mature mandatory government AI governance system, 
 
 ### Framework Architecture
 
-[Architecture diagram removed for corruption artifacts]
+See [framework-hierarchy.svg](../diagrams/framework-hierarchy.svg) for visual representation.
 
 ### Key Documents
 
@@ -65,6 +65,7 @@ NSW operates Australia's most mature mandatory government AI governance system, 
 3. **Privacy and Security** - Protect personal information and systems
 4. **Transparency** - Be open about AI use
 5. **Accountability** - Clear responsibility for AI outcomes
+6. **Reliability and Safety** - AI must be safe, reliable and operate as intended
 
 #### Circular DCS-2024-04
 
@@ -146,7 +147,7 @@ Victoria formalised AI governance in November 2024 with mandatory guidelines for
 
 #### Victorian AI Assurance Framework
 
-**Status:** In development (piloting)
+**Status:** In development (piloting since 2024; status update pending)
 
 **Approach:** Piloting with Microsoft Copilot deployment before broader rollout.
 
@@ -176,7 +177,7 @@ Victoria formalised AI governance in November 2024 with mandatory guidelines for
 
 ### Governance Bodies
 
-**In Development:** Victorian AI advisory arrangements being established.
+Victorian AI advisory arrangements under establishment (status as of April 2026 pending confirmation).
 
 **Contact:** Digital Victoria - digital.victoria@dpc.vic.gov.au
 
@@ -190,7 +191,7 @@ Queensland has comprehensive mandatory policy with a sophisticated two-part risk
 
 ### Framework Architecture
 
-[Architecture diagram removed for corruption artifacts]
+See [framework-hierarchy.svg](../diagrams/framework-hierarchy.svg) for visual representation.
 
 ### Key Documents
 
@@ -323,7 +324,7 @@ WA has the most comprehensive framework among smaller jurisdictions, with clear 
 
 ### Framework Architecture
 
-[Architecture diagram removed for corruption artifacts]
+See [framework-hierarchy.svg](../diagrams/framework-hierarchy.svg) for visual representation.
 
 ### Key Documents
 
@@ -334,7 +335,7 @@ WA has the most comprehensive framework among smaller jurisdictions, with clear 
 **Effective:** July 2025
 
 **Key Requirements:**
-- AI Accountable Officers designated by September 2025
+- AI Accountable Officers designated (deadline was September 2025)
 - Risk assessment for all AI projects
 - Compliance with WA AI Assurance Framework
 - Regular reporting
@@ -402,7 +403,7 @@ Tasmania has the least developed AI governance framework, relying primarily on g
 
 **Status:** Strategy only
 
-**AI coverage:** Strategic intent; operational framework expected H1 2026.
+**AI coverage:** Strategic intent; operational framework expected H1 2026 (status pending confirmation).
 
 ### Governance Bodies
 

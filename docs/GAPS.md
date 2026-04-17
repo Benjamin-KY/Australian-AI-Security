@@ -8,10 +8,10 @@ This analysis identifies critical gaps in Australia's AI security landscape comp
 
 ## Executive Summary
 
-Australia's AI security framework has significant strengths in technical guidance (ACSC) but critical gaps in mandatory requirements, private sector coverage, and institutional coordination. The National AI Plan's focus on AI Safety over AI Security leaves fundamental adversarial and operational security issues unaddressed.
+Australia's AI security framework has significant strengths in technical guidance (ACSC) but critical gaps in mandatory requirements, private sector coverage, and institutional coordination. The National AI Plan (December 2025) decided not to proceed with mandatory guardrails following public consultation, opting instead for voluntary guidance, and its focus on AI Safety over AI Security leaves fundamental adversarial and operational security issues unaddressed.
 
 **Key Gaps:**
-1. No mandatory AI security requirements for private sector
+1. No cross-sector mandatory AI security requirements for private sector
 2. No systematic risk classification system
 3. No AI incident reporting regime
 4. No foundation model governance
@@ -21,11 +21,11 @@ Australia's AI security framework has significant strengths in technical guidanc
 
 ---
 
-## Gap 1: No Mandatory AI Security for Private Sector
+## Gap 1: No Cross-Sector Mandatory AI Security for Private Sector
 
 ### The Gap
 
-All binding AI security obligations in Australia apply only to:
+All binding AI security obligations in Australia are sector-specific, applying only to:
 - Government entities (ISM, PSPF, DTA Policy)
 - Specific regulated sectors (APRA for finance, eSafety for online services)
 
@@ -51,13 +51,15 @@ The private sector operates under **purely voluntary guidance**.
 
 Develop mandatory AI security requirements for high-risk AI applications regardless of sector, aligned with international frameworks.
 
+**Government rationale:** The December 2025 National AI Plan explicitly chose a voluntary, principles-based approach following consultation (500+ submissions). The Productivity Commission assessed AI could contribute $115-170 billion to the Australian economy by 2030, and the government concluded premature mandatory regulation could impede this opportunity. Existing sector regulators (APRA, eSafety, TGA, SOCI) already cover the highest-risk AI applications.
+
 ---
 
 ## Gap 2: No Systematic Risk Classification
 
 ### The Gap
 
-Australia lacks a national AI risk classification system. The September 2024 "Mandatory Guardrails" proposals paper consulted on risk categories but no legislation emerged.
+Australia lacks a national AI risk classification system. The September 2024 "Mandatory Guardrails" proposals paper consulted on risk categories, but the Government decided not to proceed with mandatory guardrails following public consultation in the December 2025 National AI Plan, opting instead for voluntary AI6 guidance.
 
 Individual frameworks implement their own tiers:
 - NSW AIAF: Low/Medium/High/Very High
@@ -70,7 +72,14 @@ Individual frameworks implement their own tiers:
 
 **EU AI Act Risk Tiers:**
 
-Australia has no equivalent.
+| Tier | Description | Examples |
+|------|-------------|---------|
+| **Prohibited** | Unacceptable risk (banned from Feb 2025) | Social scoring, manipulative AI, predictive policing |
+| **High-Risk** | Significant risk (obligations from Aug 2026) | Biometric ID, critical infrastructure, employment |
+| **Limited Risk** | Transparency obligations | Chatbots, deepfakes, emotion recognition |
+| **Minimal Risk** | No specific obligations | Spam filters, AI-enabled games |
+
+Australia has no equivalent tiered system.
 
 ### Impact
 
@@ -136,6 +145,8 @@ Australia has no specific framework for:
 
 ISM controls apply to LLM implementation but not to model development, training, or distribution.
 
+**Note:** ACSC published "Frontier Models and Their Impact on Cyber Security" (April 2026), providing defensive guidance but not governance requirements for frontier model providers.
+
 ### International Comparison
 
 **EU AI Act GPAI Provisions:**
@@ -159,7 +170,7 @@ ISM controls apply to LLM implementation but not to model development, training,
 
 ### Recommendation
 
-Develop GPAI governance framework, potentially through AISI, addressing model documentation, evaluation, and distribution requirements.
+Develop GPAI governance framework, potentially through AISI (operational since early 2026), addressing model documentation, evaluation, and distribution requirements.
 
 ---
 
@@ -180,8 +191,8 @@ ISM-1924 requires detecting adversarial inputs but:
 | **EU AI Act Article 55** | Mandatory adversarial testing for GPAI with systemic risk |
 | **UK AISI** | Conducts red-teaming; published research on attacks |
 | **Singapore** | Project Moonshot open-source red-teaming toolkit |
-| **US NIST** | AI RMF recommends; EO 14110 (rescinded) defined red-teaming |
-| **Australia** | ISM-1924 detection only; no testing mandate |
+| **US NIST** | AI RMF recommends; EO 14110 (rescinded Jan 2025; replaced by EO 14179 deregulatory approach) defined red-teaming |
+| **Australia** | ISM-1924 detection only; ACSC frontier model guidance (Apr 2026) recommends using AI for vulnerability discovery but no testing mandate |
 
 ### Impact
 
@@ -213,33 +224,19 @@ The UK explicitly recognised this gap and **renamed their AI Safety Institute to
 
 ### International Comparison
 
-UK Approach (Feb 2025):
+| Aspect | UK AI Security Institute (Feb 2025) | Australia AI Safety Institute (Dec 2025) |
+|--------|-------------------------------------|------------------------------------------|
+| Frontier AI safety | ✅ | ✅ |
+| Adversarial robustness | ✅ | ❌ |
+| National security applications | ✅ | ❌ |
+| Cyber threats involving AI | ✅ | ❌ |
+| Evaluation and testing | ✅ | ✅ |
+| Alignment research | ✅ | ✅ |
+| Monitoring capabilities | ❌ | ✅ |
+| International cooperation | ✅ | ✅ |
+| Security explicitly in mandate | ✅ | ❌ (security not explicitly in mandate; AISI operational since early 2026) |
 
-AI SECURITY INSTITUTE (AISI)
-
-- Frontier AI safety
-- Adversarial robustness
-- National security applications
-- Cyber threats involving AI
-- Evaluation and testing
-
-Australia Approach (Dec 2025):
-
-AI SAFETY INSTITUTE (AISI)
-
-- Frontier AI safety
-- Alignment research
-- Monitoring capabilities
-- International cooperation
-- (Security not in mandate)
-
-+
-
-ACSC
-
-- Cyber security guidance
-- AI security publications
-- (Separate from AISI)
+**Note:** Australia's ACSC separately handles cyber security guidance and AI security publications.
 
 ### Impact
 
@@ -288,7 +285,7 @@ Australia's National AI Plan conflates "security" with general data protection w
 
 ### Impact
 
-- AI Security receives no dedicated attention
+- AI-specific security guidance remains distributed across ACSC publications rather than consolidated into a dedicated national AI Security strategy
 - AISI mandate excludes adversarial threats
 - Technical security work continues in ACSC silo
 - No national strategy for AI Security
@@ -370,9 +367,9 @@ Include AI security track in national AI skills strategy; develop professional c
 
 ### The Gap
 
-Australia's AISI receives $29.9 million, focused on safety research.
+Australia's AISI receives $29.9 million (safety focus; from National AI Plan's total $39.9M AI investment), focused on safety research.
 
-**No identified funding stream for AI security research.**
+**No publicly identified funding stream dedicated to AI security research.**
 
 ### International Comparison
 
@@ -380,7 +377,9 @@ Australia's AISI receives $29.9 million, focused on safety research.
 |--------------|--------------------------------|
 | **US NSF** | >$700 million annually in AI research (includes security) |
 | **UK AISI** | £100 million (expanded to security mandate) |
-| **Australia AISI** | $29.9 million (safety focus only) |
+| **Australia AISI** | $29.9 million (safety focus; from National AI Plan's total $39.9M AI investment) |
+
+*Note: Raw funding figures are not directly comparable due to differences in economy size. On a per-capita basis, Australia's AISI funding is approximately $1.15 per person, compared to the UK's approximately £1.50 ($2.90 AUD) per person for AISI, and US NSF AI investment of approximately $2.10 per person.*
 
 ### Impact
 
@@ -406,7 +405,7 @@ Establish dedicated AI security research funding stream; include security in AIS
 | No AI incident reporting | Medium | Medium | High |
 | No consolidated AI Security body | Medium | Low | High |
 | No foundation model governance | Medium | High | High |
-| Limited supply chain security | Medium | Medium | High |
+| Limited supply chain security | High | Medium | High |
 | No workforce strategy | Medium | Medium | Medium |
 | Limited research funding | Low | High | Medium |
 
@@ -446,6 +445,8 @@ Closing these gaps requires:
 - Investing in research and workforce
 
 The conversation on AI Security in Australia needs to get louder.
+
+**Note:** This gap analysis focuses on what is missing. Australia's ACSC Five Eyes publications remain among the world's best technical AI security guidance, and the ISM AI controls provide a strong mandatory baseline for government.
 
 ---
 

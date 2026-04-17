@@ -133,7 +133,7 @@ The US approach is fragmented across agencies with sector-specific requirements.
 
 **Key Frameworks:**
 
-#### NIST AI Risk Management Framework (AI RMF)
+#### NIST AI Risk Management Framework (AI RMF 1.0, NIST AI 100-1)
 
 Voluntary framework with four core functions:
 1. **Govern** - Cultivate AI risk management culture
@@ -147,7 +147,7 @@ Voluntary framework with four core functions:
 - Supply chain risk management
 - Incident management
 
-#### NIST Adversarial Machine Learning Report
+#### NIST Adversarial Machine Learning Report (NIST AI 100-2e2023)
 
 Comprehensive taxonomy covering:
 - **Evasion attacks** - Manipulating inputs to cause misclassification
@@ -161,8 +161,9 @@ Established to:
 - Develop AI security guidance
 - Coordinate with Five Eyes partners (including ACSC)
 - Focus on national security AI applications
+- Co-authored "Deploying AI Systems Securely" (CSI, April 2024) with ACSC
 
-#### DHS AI Guidelines for Critical Infrastructure
+#### DHS AI Guidelines for Critical Infrastructure (DHS, February 2024)
 
 14 February 2024 guidelines categorise three risk areas:
 1. Attacks **using** AI
@@ -177,6 +178,8 @@ The October 2023 Executive Order established AI safety requirements including:
 - Security standards development
 
 **Note:** EO 14110 was rescinded in January 2025. Impact on AI security requirements ongoing.
+
+**EO 14179 "Removing Barriers to American Leadership in AI" (January 2025)** replaced EO 14110 with a deregulatory approach. The US AI Safety Institute was subsequently renamed to the **Center for AI Standards and Innovation (CAISI)** in June 2025. The Trump administration released legislative recommendations in March 2026 seeking to preempt state AI laws with a "minimally burdensome" federal framework.
 
 ### Australia vs US
 
@@ -239,7 +242,7 @@ Practical guidance for:
 | AI governance tool | ❌ No | ✅ AI Verify |
 | Red-teaming toolkit | ❌ No | ✅ Project Moonshot (open source) |
 | Model governance framework | ⚠️ NAIC guidance | ✅ Comprehensive framework |
-| Testing/certification | ❌ No | ✅ AI Verify certification |
+| Testing/certification | ❌ No | ✅ AI Verify self-assessment |
 | International standards alignment | ⚠️ References | ✅ Maps to ISO 42001 |
 
 ---
@@ -311,26 +314,44 @@ Japan AISI evaluation perspectives include:
 
 | Aspect | Australia | Japan |
 |--------|-----------|-------|
-| Safety Institute | ✅ AISI (planned early 2026) | ✅ AISI (operational) |
+| Safety Institute | ✅ AISI (operational early 2026) | ✅ AISI (operational) |
 | Evaluation methodology | ❌ Not published | ✅ Published v1.01 |
 | Adversarial robustness | ⚠️ ISM control | ✅ In evaluation framework |
 | International cooperation | ✅ INASI member | ✅ INASI member |
 
 ---
 
-## International Network of AI Safety Institutes (INASI)
+## China
+
+### Regulatory Landscape
+
+China has binding AI regulations that predate the EU AI Act:
+
+| Regulation | Date | Scope |
+|------------|------|-------|
+| **Algorithmic Recommendation Provisions** | Mar 2022 | Algorithmic transparency, user opt-out |
+| **Deep Synthesis Provisions** | Jan 2023 | Deepfakes, synthetic media labelling |
+| **Interim Measures for Generative AI** | Aug 2023 | Content review, training data compliance, watermarking |
+
+**Key difference from Australia:** China has mandatory, enforceable AI regulations covering the private sector. Australia has no equivalent.
+
+**Important context:** China's AI regulations serve fundamentally different governance objectives, including content control and political censorship. The regulatory framework is embedded in an authoritarian governance model not comparable to liberal democracies. However, the technical regulatory mechanisms (registration, impact assessment, transparency requirements) offer useful comparison points.
+
+---
+
+## International Network for Advanced AI Measurement, Evaluation and Science
 
 Australia is a member of INASI, connecting with peer institutes:
 
 **Members:**
 - 🇬🇧 UK AISI (AI Security Institute)
-- 🇺🇸 US AISI
+- 🇺🇸 US CAISI (formerly AISI)
 - 🇯🇵 Japan AISI
 - 🇰🇷 Korea AISI
 - 🇫🇷 France AISI
 - 🇨🇦 Canada AISI
 - 🇸🇬 Singapore (observer)
-- 🇦🇺 Australia AISI (joining)
+- 🇦🇺 Australia AISI (member)
 - 🇪🇺 EU AI Office (observer)
 
 **Focus Areas:**
@@ -373,18 +394,27 @@ Australia is a member of INASI, connecting with peer institutes:
 
 | Standard | Description | Australia Status |
 |----------|-------------|------------------|
-| ISO/IEC 42001:2023 | AI Management Systems | Referenced, not mandated |
-| ISO/IEC 23894:2023 | AI Risk Management | Referenced |
-| ISO/IEC 27001:2022 | Information Security | ISM aligns |
-| ISO/IEC 27701:2019 | Privacy Information Management | OAIC references |
+| ISO/IEC 42001:2023 — AI Management Systems | AI Management Systems | Referenced, not mandated |
+| ISO/IEC 23894:2023 — AI Risk Management | AI Risk Management | Referenced |
+| ISO/IEC 27001:2022 — Information Security Management | Information Security | ISM aligns |
+| ISO/IEC 27701:2019 — Privacy Information Management | Privacy Information Management | OAIC references |
 
-### Emerging Standards
+### Emerging and Recently Published Standards
 
 | Standard | Description | Status |
 |----------|-------------|--------|
-| ISO/IEC 27090 | AI Security Guidelines | In development |
-| ISO/IEC 24029 | AI Robustness | In development |
-| IEEE 2841 | AI Security Taxonomy | In development |
+| ISO/IEC 27090:2024 | AI Cybersecurity Guidelines | **Published December 2024** |
+| ISO/IEC 24029-1:2021 | AI Robustness — Part 1: Overview | **Published** |
+| ISO/IEC 24029-2:2023 | AI Robustness — Part 2: Formal Methods | **Published** |
+| IEEE 2841 | Framework and Process for Deep Learning Evaluation | In development |
+
+### International Treaties
+
+| Treaty | Date | Australia Status |
+|--------|------|-----------------|
+| **Council of Europe Framework Convention on AI** | Adopted May 2024, open for signature Sep 2024 | Not yet signed |
+| **Bletchley Declaration on AI Safety** | Nov 2023 | Signatory |
+| **Seoul Declaration on AI Safety** | May 2024 | Signatory |
 
 ---
 

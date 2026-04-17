@@ -22,6 +22,8 @@ graph TB
             ACSC3[Secure AI Development]
             ACSC4[AI Data Security]
             ACSC5[AI Supply Chain]
+            ACSC6[Content Credentials]
+            ACSC7[Frontier Models]
         end
         
         subgraph DISR["DISR/NAIC"]
@@ -37,6 +39,7 @@ graph TB
         ASIC[ASIC Report 798]
         ESAFE[eSafety Standards]
         OAIC[OAIC Privacy]
+        TGA[TGA SaMD]
     end
     
     subgraph National["Cross-Jurisdictional"]
@@ -76,7 +79,13 @@ graph TB
     ETHICS --> NSW
     ETHICS --> VIC
     ETHICS --> QLD
-    
+
+    %% National AI Plan relationships
+    NAIP --> AISI
+    AISI -.-> ACSC1
+    NAIP --> ETHICS
+    NAIP --> DTA
+
     %% ISM referenced by states
     ISM -.-> NSW
     ISM -.-> VIC
@@ -84,7 +93,7 @@ graph TB
     ISM -.-> WA
     
     %% Sector flows
-    ISM --> APRA
+    ISM -.-> APRA
     ISM -.-> ASIC
     
     classDef mandatory fill:#ff6b6b,stroke:#333,stroke-width:2px
@@ -93,8 +102,8 @@ graph TB
     classDef state fill:#95e1d3,stroke:#333,stroke-width:2px
     
     class ISM,PSPF,SOCI,DTA mandatory
-    class ACSC1,ACSC2,ACSC3,ACSC4,ACSC5,AI6,ETHICS voluntary
-    class APRA,ASIC,ESAFE,OAIC sector
+    class ACSC1,ACSC2,ACSC3,ACSC4,ACSC5,ACSC6,ACSC7,AI6,ETHICS voluntary
+    class APRA,ASIC,ESAFE,OAIC,TGA sector
     class NSW,VIC,QLD,WA,SA,ACT,NT,TAS state
 ```
 
@@ -155,10 +164,10 @@ graph TB
         VIC[VIC<br/>GenAI Guideline + VPDSF]
         QLD[QLD<br/>FAIRA + IS18]
         ACT[ACT<br/>Policy + Framework + AIAG]
-    end
-    
-    subgraph Basic["Basic"]
         SA[SA<br/>Ethics Policy + Office for AI]
+    end
+
+    subgraph Basic["Basic"]
         NT[NT<br/>Assurance Framework]
     end
     
@@ -176,8 +185,8 @@ graph TB
     classDef minimal fill:#95a5a6,stroke:#333,stroke-width:2px
     
     class NSW,WA comp
-    class VIC,QLD,ACT dev
-    class SA,NT basic
+    class VIC,QLD,ACT,SA dev
+    class NT basic
     class TAS minimal
 ```
 
@@ -301,40 +310,76 @@ For knowledge graph construction, use these entity types and relationships:
 entities:
   Document:
     properties:
-      - id: string
+      - id: string            # e.g., "ISM-2072", "PSPF-ADV-001-2025"
       - title: string
       - version: string
       - date: date
       - url: string
-      - status: enum[mandatory, voluntary, guidance, framework]
-      
+      - status: enum[mandatory, voluntary, guidance, framework, superseded]
+      - scope: enum[government, sector, national, all]
+      - description: text
+
   Authority:
     properties:
-      - id: string
+      - id: string            # e.g., "ACSC", "APRA", "DIGITAL-NSW"
       - name: string
       - abbreviation: string
-      - jurisdiction: enum[federal, nsw, vic, qld, sa, wa, tas, nt, act]
-      - type: enum[department, agency, regulator, body]
-      
+      - jurisdiction: enum[federal, nsw, vic, qld, sa, wa, tas, nt, act, national, international]
+      - type: enum[department, agency, regulator, body, institute, office]
+      - parent: Authority     # e.g., ACSC -> ASD
+      - website: string
+
   Control:
     properties:
-      - id: string
+      - id: string            # e.g., "ISM-1923"
       - title: string
-      - requirement: text
+      - requirement: text     # Official control text
       - applicability: text
-      
+      - date_added: date
+      - external_reference: string  # e.g., "OWASP Top 10 LLM v2.0"
+
   Sector:
     properties:
       - id: string
       - name: string
       - regulator: Authority
-      
+      - soci_designated: boolean  # Under SOCI Act?
+
   RiskCategory:
     properties:
       - id: string
       - name: string
       - level: enum[low, medium, high, very_high, prohibited]
       - framework: Document
+      - description: text
+
+  InternationalFramework:
+    properties:
+      - id: string            # e.g., "EU-AI-ACT", "NIST-AI-RMF"
+      - title: string
+      - jurisdiction: string  # e.g., "EU", "US", "UK", "Singapore"
+      - status: enum[binding, voluntary, proposed]
+      - date: date
+      - url: string
+
+  Gap:
+    properties:
+      - id: string            # e.g., "GAP-01"
+      - title: string
+      - description: text
+      - impact: enum[low, medium, high, critical]
+      - effort_to_close: enum[low, medium, high]
+      - priority: enum[critical, high, medium, low]
+
+  Standard:
+    properties:
+      - id: string            # e.g., "ISO-42001-2023", "NIST-AI-100-2"
+      - title: string
+      - organisation: string  # ISO, NIST, IEEE
+      - publication_id: string  # Full publication number
+      - status: enum[published, draft, in_development]
+      - date: date
+      - url: string
 ```
 
 ### Relationship Types
@@ -344,36 +389,94 @@ relationships:
   ISSUED_BY:
     from: Document
     to: Authority
-    
+
   REFERENCES:
     from: Document
     to: Document
     properties:
       - type: enum[mandatory, recommended, informative]
-      
+
   CONTAINS:
     from: Document
     to: Control
-    
+
   APPLIES_TO:
     from: Document
     to: Sector
-    
+
   SUPERSEDES:
     from: Document
     to: Document
     properties:
       - date: date
-      
+
   ALIGNS_WITH:
     from: Document
-    to: Document
+    to: Standard
     properties:
-      - standard: string  # e.g., "ISO 42001"
-      
+      - mapping_type: enum[full, partial, referenced]
+
   REGULATES:
     from: Authority
     to: Sector
+
+  ADDRESSES:
+    from: Document
+    to: Gap
+    properties:
+      - coverage: enum[full, partial, none]
+
+  EQUIVALENT_TO:
+    from: Document
+    to: InternationalFramework
+    properties:
+      - comparison: text  # How they compare
+
+  MITIGATES:
+    from: Control
+    to: RiskCategory
+
+  PARENT_OF:
+    from: Authority
+    to: Authority
+
+  COORDINATES_WITH:
+    from: Authority
+    to: Authority
+    properties:
+      - mechanism: string  # e.g., "Five Eyes", "INASI", "Data and Digital Ministers"
+```
+
+### Instance Examples
+
+```yaml
+# Example: ISM-1923 control and its relationships
+instances:
+  - entity: Control
+    id: "ISM-1923"
+    title: "OWASP Top 10 for LLM"
+    requirement: "Risks identified in the OWASP Top 10 for Large Language Model Applications are mitigated."
+    applicability: "All LLM implementations in Commonwealth entities"
+    date_added: "2024-06-01"
+    external_reference: "OWASP Top 10 for LLM Applications v2.0 (2025)"
+
+  - relationship: CONTAINS
+    from: {type: Document, id: "ISM"}
+    to: {type: Control, id: "ISM-1923"}
+
+  - relationship: ISSUED_BY
+    from: {type: Document, id: "ISM"}
+    to: {type: Authority, id: "ACSC"}
+
+  - relationship: ALIGNS_WITH
+    from: {type: Document, id: "ISM"}
+    to: {type: Standard, id: "ISO-27001-2022"}
+    mapping_type: "full"
+
+  - relationship: ADDRESSES
+    from: {type: Document, id: "ISM"}
+    to: {type: Gap, id: "GAP-05"}
+    coverage: "partial"  # ISM-1924 addresses detection, not pre-deployment test
 ```
 
 ---
@@ -385,20 +488,20 @@ relationships:
 **Find all mandatory documents:**
 ```cypher
 MATCH (d:Document {status: 'mandatory'})
-RETURN d.title, d.authority, d.date
+RETURN d.title, d.date
 ORDER BY d.date DESC
 ```
 
 **Find documents that reference ISM:**
 ```cypher
 MATCH (d:Document)-[:REFERENCES]->(ism:Document {title: 'Information Security Manual'})
-RETURN d.title, d.authority
+RETURN d.title
 ```
 
 **Find compliance path for Commonwealth entity:**
 ```cypher
-MATCH path = (start:Document {title: 'ISM'})-[:REFERENCES*1..3]->(end:Document)
-WHERE end.jurisdiction = 'federal'
+MATCH path = (start:Document {title: 'ISM'})-[:REFERENCES*1..3]->(end:Document)<-[:ISSUED_BY]-(auth:Authority)
+WHERE auth.jurisdiction = 'federal'
 RETURN path
 ```
 
@@ -409,16 +512,39 @@ WHERE c.title CONTAINS 'AI' OR c.title CONTAINS 'LLM'
 RETURN d.title, c.id, c.title, c.requirement
 ```
 
+**Find gaps not addressed by any document:**
+```cypher
+MATCH (g:Gap)
+WHERE NOT EXISTS { MATCH (d:Document)-[:ADDRESSES {coverage: 'full'}]->(g) }
+RETURN g.id, g.title, g.impact, g.priority
+ORDER BY g.priority
+```
+
+**Find international equivalents for Australian frameworks:**
+```cypher
+MATCH (d:Document)-[:EQUIVALENT_TO]->(intl:InternationalFramework)
+RETURN d.title AS australian_framework, intl.title AS international_equivalent, intl.jurisdiction
+```
+
+**Find which controls mitigate which risk categories:**
+```cypher
+MATCH (c:Control)-[:MITIGATES]->(r:RiskCategory)
+RETURN c.id, c.title, r.name, r.level
+ORDER BY r.level DESC
+```
+
+**Find Five Eyes coordination network:**
+```cypher
+MATCH (a1:Authority)-[coord:COORDINATES_WITH]->(a2:Authority)
+WHERE coord.mechanism = 'Five Eyes'
+RETURN a1.name, a2.name, coord.mechanism
+```
+
 ---
 
 ## Data Files
 
-Raw data for knowledge graph construction is available in the `/data` directory:
-
-- `frameworks.json` - All framework metadata
-- `relationships.json` - Document relationships
-- `controls.json` - Individual controls
-- `authorities.json` - Issuing authorities
+Data files for knowledge graph construction are planned for a future release. See the [CHANGELOG](../CHANGELOG.md) for the roadmap.
 
 ---
 
@@ -427,12 +553,12 @@ Raw data for knowledge graph construction is available in the `/data` directory:
 Recommended tools for visualising the knowledge graph:
 
 | Tool | Purpose | Link |
-| |------|---------|------|
-| | **Neo4j** | Graph database and visualisation | neo4j.com |
-| | **Obsidian** | Markdown-based knowledge graph | obsidian.md |
-| | **Kumu** | Relationship mapping | kumu.io |
-| | **draw.io** | Diagram creation | diagrams.net |
-| | **Mermaid** | Code-based diagrams | mermaid.js.org |
+|------|---------|------|
+| **Neo4j** | Graph database and visualisation | [neo4j.com](https://neo4j.com) |
+| **Obsidian** | Markdown-based knowledge graph | [obsidian.md](https://obsidian.md) |
+| **Kumu** | Relationship mapping | [kumu.io](https://kumu.io) |
+| **draw.io** | Diagram creation | [diagrams.net](https://diagrams.net) |
+| **Mermaid** | Code-based diagrams | [mermaid.js.org](https://mermaid.js.org) |
 
 ---
 

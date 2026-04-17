@@ -179,6 +179,12 @@ Before submitting:
 
 ---
 
+## Licence
+
+All contributions are accepted under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) licence. By submitting a pull request, you agree that your contribution will be licensed under the same terms.
+
+---
+
 ## Review Process
 
 1. **Triage** - Maintainers review within 1 week
@@ -200,8 +206,8 @@ Contributors are recognised in:
 
 ## Questions?
 
-- Open an issue with `question` label
-- Contact maintainers via LinkedIn
+- Open an [issue](https://github.com/Benjamin-KY/Australian-AI-Security/issues) with `question` label
+- Contact maintainers via [LinkedIn](https://www.linkedin.com/in/benjamin-kereopa-yorke/)
 - Join discussions in Issues
 
 ---

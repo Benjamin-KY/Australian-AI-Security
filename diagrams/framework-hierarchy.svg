@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" width="900" height="650">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" width="900" height="650" role="img" aria-label="Australian AI Security Framework Hierarchy diagram showing relationships between federal, sector, and state/territory frameworks">
+  <title>Australian AI Security Framework Hierarchy</title>
+  <desc>Visual hierarchy showing four layers: Mandatory Government (ISM, PSPF, SOCI, DTA), Sector-Specific Binding (APRA, ASIC, eSafety, OAIC), Voluntary All Sectors (ACSC, AI6/NAIC, AI Ethics, National Framework), and State/Territory Frameworks (NSW, VIC, QLD, SA, WA, TAS, NT, ACT) with maturity indicators.</desc>
   <defs>
     <style>
       .title { font: bold 20px 'Segoe UI', sans-serif; fill: #1a1a2e; }
@@ -117,8 +119,8 @@
     </g>
     <g transform="translate(160, 40)">
       <rect width="135" height="40" fill="white" fill-opacity="0.2" rx="4"/>
-      <text x="67" y="18" text-anchor="middle" class="box-text">AI6/NAIC</text>
-      <text x="67" y="32" text-anchor="middle" class="box-text" style="font-size:10px">Guidance</text>
+      <text x="67" y="18" text-anchor="middle" class="box-text">NAIC</text>
+      <text x="67" y="32" text-anchor="middle" class="box-text" style="font-size:10px">AI6 Guidance</text>
     </g>
     <g transform="translate(305, 40)">
       <rect width="135" height="40" fill="white" fill-opacity="0.2" rx="4"/>
@@ -221,5 +223,5 @@
   <path d="M 350 400 L 350 415" class="connector" stroke-dasharray="5,3"/>
   
   <!-- Footer -->
-  <text x="450" y="630" text-anchor="middle" class="label">Australian AI Security Framework Index | CC BY 4.0 | December 2025</text>
+  <text x="450" y="630" text-anchor="middle" class="label">Australian AI Security Framework Index | CC BY 4.0 | April 2026</text>
 </svg>

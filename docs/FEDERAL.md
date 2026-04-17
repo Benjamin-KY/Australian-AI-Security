@@ -127,6 +127,29 @@ The Australian Cyber Security Centre (ACSC), part of the Australian Signals Dire
 
 ---
 
+#### Frontier Models and Their Impact on Cyber Security (April 2026)
+
+**Purpose:** Guidance on preparing for the cyber security implications of frontier AI models with enhanced vulnerability discovery capabilities.
+
+**Context:** Published in response to rapid advances in frontier AI model capabilities for vulnerability discovery. The ACSC guidance notes that frontier models have discovered long-standing vulnerabilities that survived decades of human review, and references industry blog posts including from Anthropic (7 April 2026) and warnings from OpenAI (December 2025) about frontier model cyber security risks.
+
+> *Author's note: Anthropic's Claude Mythos model and Project Glasswing are illustrative examples of the capabilities the ACSC guidance addresses. The ACSC publication references these developments without naming specific models or products.*
+
+**Key Mitigation Strategies:**
+
+| Strategy | Description | ASD References |
+|----------|-------------|----------------|
+| **Reduce attack surfaces** | Assess external connectivity, apply network segmentation, limit to reputable suppliers | ISM System Hardening, Network Segmentation guidance |
+| **Patch every day** | Adopt increased patching tempo; apply all patches regardless of severity rating | ISM System Management, Essential Eight |
+| **Use AI to find vulnerabilities** | Leverage frontier models for Secure by Design; strengthen code before deployment | Safe Software Deployment guidance |
+| **Implement layered security** | Defence-in-depth aligned with modern defensible architectures; zero trust principles | Secure by Design guidance |
+
+**Key Insight:** AI is not creating new vulnerabilities — it is identifying those that already exist. Organisations should harness AI's vulnerability discovery capabilities defensively while preparing for adversaries using the same capabilities offensively.
+
+**Partners:** References NCSC-UK analysis on defensive use of frontier models.
+
+---
+
 ### ACSC Guidance Summary Table
 
 | Document | Primary Audience | Threat Coverage | Implementation Effort |
@@ -136,6 +159,7 @@ The Australian Cyber Security Centre (ACSC), part of the Australian Signals Dire
 | Secure Development | Developers | SDLC | High |
 | AI Data Security | Data teams | Data lifecycle | Medium |
 | Supply Chain | Procurement/Security | Third-party | Medium |
+| Frontier Models | All organisations | Frontier AI risks | Medium |
 
 ---
 
@@ -152,17 +176,17 @@ Three AI-specific controls have been added since June 2024:
 **Control Text:**
 > Risks identified in the OWASP Top 10 for Large Language Model Applications are mitigated.
 
-**OWASP Top 10 for LLM Applications (2025):**
+**OWASP Top 10 for LLM Applications (2025 v2.0):**
 1. Prompt Injection
-2. Insecure Output Handling
-3. Training Data Poisoning
-4. Model Denial of Service
-5. Supply Chain Vulnerabilities
-6. Sensitive Information Disclosure
-7. Insecure Plugin Design
-8. Excessive Agency
-9. Overreliance
-10. Model Theft
+2. Sensitive Information Disclosure
+3. Supply Chain Vulnerabilities
+4. Data and Model Poisoning
+5. Improper Output Handling
+6. Excessive Agency
+7. System Prompt Leakage
+8. Vector and Embedding Weaknesses
+9. Misinformation
+10. Unbounded Consumption
 
 **Implementation:**
 - Map each OWASP risk to your LLM deployment
@@ -187,6 +211,17 @@ Three AI-specific controls have been added since June 2024:
 | **Layered Prompts** | System prompts resistant to injection | Medium |
 | **Output Filtering** | Detect when injection succeeded | Complementary |
 
+*Note: Effectiveness ratings are the author's assessment based on practitioner experience, not ASD's official position. No single approach is comprehensive; defence in depth is required.*
+
+**Critical: Indirect Prompt Injection**
+
+ISM-1924's scope includes adversarial inputs that may not come directly from the user. In retrieval-augmented generation (RAG) systems and agentic AI deployments, adversarial content can be injected via:
+- Poisoned documents ingested by the retrieval pipeline
+- Malicious content in emails, databases, or external data sources
+- Compromised tool outputs in multi-step agent workflows
+
+Organisations should implement defences against indirect injection including retrieval sandboxing, output monitoring for tool-calling systems, and canary document detection.
+
 **Practical Considerations:**
 - No single approach is comprehensive
 - Defence in depth required
@@ -205,14 +240,16 @@ Pickle files (common in Python ML) can execute arbitrary code on load, enabling 
 
 **Safe Formats:**
 - **safetensors** - Recommended; no code execution possible
-- **ONNX** - Open format; no arbitrary code
-- **TensorFlow SavedModel** - With signature verification
+- **ONNX** - Open format; safe when custom operators are disabled or restricted to a known allowlist
+- **TensorFlow SavedModel** - When restricted to frozen graphs; disable py_function and custom layer code execution
 - **GGUF/GGML** - Quantized format; inherently safe
 
 **Unsafe Formats:**
 - **pickle (.pkl, .pt, .pth)** - Arbitrary code execution
 - **joblib** - Python serialisation; code execution possible
 - **Custom formats** - Assess case by case
+- **PyTorch .bin** - Uses pickle serialisation internally despite different extension
+- **Keras HDF5 (.h5)** - Lambda layers can contain arbitrary Python code
 
 **Implementation:**
 - Convert existing models to safetensors where possible
@@ -244,7 +281,7 @@ The PSPF establishes protective security requirements for Commonwealth entities.
 
 ### PSPF 2025 AI Additions
 
-The October 2025 PSPF release added new content specifically addressing:
+The July 2025 PSPF release added new content specifically addressing:
 - Artificial intelligence
 - Quantum computing
 - Connected peripheral technologies
@@ -291,7 +328,7 @@ The October 2025 PSPF release added new content specifically addressing:
 
 ### PSPF and AI Decision Flow
 
-(Not shown here; ASCII-style diagrams removed for clarity)
+See the [Knowledge Graph](KNOWLEDGE-GRAPH.md) for the PSPF AI decision flow Mermaid diagram, or the [diagrams/](../diagrams/) folder for SVG visualisations.
 
 ---
 
@@ -344,7 +381,7 @@ The Digital Transformation Agency oversees AI governance for the Australian Publ
 
 | Requirement | Deadline | Detail |
 |-------------|----------|--------|
-| **Chief AI Officers** | Dec 2025 | Every agency to designate |
+| **Chief AI Officers** | By end of 2026 | Every agency to designate |
 | **Transparency Statements** | 6 months from release | Public disclosure of AI use |
 | **High-Risk Oversight** | Immediate | Submit to oversight committee |
 | **Training** | Ongoing | All staff using AI |
@@ -376,6 +413,23 @@ The Digital Transformation Agency oversees AI governance for the Australian Publ
 
 ---
 
+### Australia's AI Ethics Principles
+
+**Published by DISR** | 8 voluntary principles referenced by all jurisdictions:
+
+1. Human, societal and environmental wellbeing
+2. Human-centred values
+3. Fairness
+4. Privacy protection and security
+5. Reliability and safety
+6. Transparency and explainability
+7. Contestability
+8. Accountability
+
+These principles are referenced by NSW, Victoria, Queensland, and the National Framework for AI Assurance.
+
+---
+
 ## Sector Regulators
 
 ### Financial Services
@@ -400,7 +454,7 @@ The Digital Transformation Agency oversees AI governance for the Australian Publ
 
 ### Online Safety
 
-**eSafety Industry Standards (June 2025)**
+**eSafety Industry Standards (June 2024, effective December 2024)**
 - First mandatory AI-specific safety requirements
 - Applies to: Generative AI services, AI companion chatbots, model distribution platforms
 - Safety by design obligations
@@ -410,8 +464,23 @@ The Digital Transformation Agency oversees AI governance for the Australian Publ
 
 **OAIC Guidance**
 - APP 11 (Security) applies to AI systems processing personal information
-- Automated decision disclosure (APP 1.7-1.9) - mandatory from December 2026
+- Automated decision disclosure (APP 1.7-1.9) - mandatory from December 2026 (per Privacy and Other Legislation Amendment Act 2024)
 - Privacy Impact Assessments recommended for AI projects
+
+### Privacy Act 1988 (as amended December 2024)
+
+The **Privacy and Other Legislation Amendment Act 2024** received Royal Assent on 10 December 2024, progressing 23 proposals from the Privacy Act Review Report.
+
+**Key AI-relevant provisions:**
+
+| Provision | Effective Date | AI Relevance |
+|-----------|---------------|--------------|
+| Statutory tort for serious invasions of privacy | June 2025 | AI systems processing personal information |
+| Automated decision-making transparency (APP 1.7-1.9) | December 2026 | Disclosure requirements for AI decisions |
+| Children's Online Privacy Code | December 2026 | AI services targeting children |
+| Enhanced OAIC enforcement powers | December 2024 | Civil penalties for AI-related privacy breaches |
+
+**Note:** Second tranche of reforms (additional Privacy Act Review proposals) expected during 2026.
 
 ---
 

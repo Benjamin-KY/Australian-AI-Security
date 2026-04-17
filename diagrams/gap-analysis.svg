@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="800" height="550">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="800" height="550" role="img" aria-label="Australian AI Security Gap Analysis priority matrix showing 10 gaps mapped by impact versus effort">
+  <title>Australian AI Security Gap Analysis</title>
+  <desc>Priority matrix plotting 10 security gaps on Impact vs Effort axes. Three critical gaps (Safety≠Security, No Risk Classification, No Private Sector Requirements), five high-priority gaps, and two medium-priority gaps.</desc>
   <defs>
     <style>
       .title { font: bold 18px 'Segoe UI', sans-serif; fill: #1a1a2e; }
@@ -96,7 +98,7 @@
     
     <!-- High Priority Gaps -->
     <!-- Gap 4: No adversarial testing - Medium effort -->
-    <g transform="translate(180, 180)" filter="url(#shadow)">
+    <g transform="translate(180, 150)" filter="url(#shadow)">
       <rect width="150" height="45" fill="url(#high-grad)" rx="6"/>
       <text x="75" y="17" text-anchor="middle" class="gap-title">No Adversarial Testing</text>
       <text x="75" y="32" text-anchor="middle" class="gap-desc">Detection only,</text>
@@ -112,7 +114,7 @@
     </g>
     
     <!-- Gap 6: Fragmented AI Security body -->
-    <g transform="translate(30, 190)" filter="url(#shadow)">
+    <g transform="translate(30, 155)" filter="url(#shadow)">
       <rect width="140" height="45" fill="url(#high-grad)" rx="6"/>
       <text x="70" y="17" text-anchor="middle" class="gap-title">No AI Security Body</text>
       <text x="70" y="32" text-anchor="middle" class="gap-desc">Functions fragmented</text>
@@ -165,5 +167,5 @@
   </g>
   
   <!-- Footer -->
-  <text x="400" y="530" text-anchor="middle" class="subtitle">Australian AI Security Framework Index | CC BY 4.0 | December 2025</text>
+  <text x="400" y="530" text-anchor="middle" class="subtitle">Australian AI Security Framework Index | CC BY 4.0 | April 2026</text>
 </svg>
